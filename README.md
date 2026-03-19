@@ -28,12 +28,15 @@ AGSS v2 is not a general-purpose solver. It complements SMT and constraint solve
 ---
 
 ## Architecture
+
+![AGSS v2 Architecture](architecture/agss_v2_diagram.png)
+
 AGSS v2 consists of three layers:
 
 ### 1. Syntax Layer
 Transforms user expressions into canonical linear constraints.
 
-### 3. Abstract Reasoning Layer
+### 2. Abstract Reasoning Layer
 Performs interval-lattice propagation:
 * **Monotone domain narrowing**
 * **Deterministic full constraint scan**
